@@ -14,8 +14,10 @@ Focusing on maximize the recall score which in our case maximize the True Positi
 What data is being used for the model? A dataset which contain some customers who are withdrawing their account from the bank due to some loss and other issues with the help this data we try to analyse and maintain accuracy.
 
 How was the data obtained? This dataset was obtained from Kaggle, and it's open for public use
+
 What are known issues in the data? Some of the features are not very predictive, so feature engineering was a challenging task.Also, there's a class imbalance in the target
-How did you alter the data (transformations, imputations, other data cleaning techniques applied, etc.)
+
+How did you alter the data (transformations, imputations, other data cleaning techniques applied, etc.)? I encoded the geography and gender column, split my features into numerical and categorical (numerically-encoded), normalized the numerical data using a standard scaler, then applied polynomial feature transformation on ('CreditScore', 'Age', 'Tenure', 'EstimatedSalary'), and finally selected the the polynomial features with the highest F-score with the target variable 
 Where is the data located?
 How frequently is the data refreshed?
 Is the data usage compliant with user agreements, data privacy best practices, and relevant regulations? (if not, don’t use it)

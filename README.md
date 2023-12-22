@@ -3,11 +3,11 @@ The ultimate goal of churn analysis is to reduce churn and increase profits. As 
 
 The main objective of this model is to predict if a customer is going to churn in order to:
 
-    -Improve the customer experience
+   -Improve the customer experience
   
-    -Optimize the banks products and services
+   -Optimize the banks products and services
   
-    -Customer retention (opposite of churn)
+   -Customer retention (opposite of churn)
 
 Focusing on maximize the recall score which in our case maximize the True Positives (How many customers did really churn) and minimizing the False Negatives (How many customers we predicted they wouldn't churn but they did) 
 
@@ -20,3 +20,4 @@ What are known issues in the data? Some of the features are not very predictive,
 How did you alter the data (transformations, imputations, other data cleaning techniques applied, etc.)? I encoded the geography and gender column, split my features into numerical and categorical (numerically-encoded), normalized the numerical data using a standard scaler, then applied polynomial feature transformation on ('CreditScore', 'Age', 'Tenure', 'EstimatedSalary'), and finally selected the the polynomial features with the highest F-score with the target variable 
 
 Is the data usage compliant with user agreements, data privacy best practices, and relevant regulations? Yes
+
